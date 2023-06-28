@@ -36,6 +36,15 @@
             background: #04bb63;
         }
 
+        .btn--secondary {
+            background: #de0333;
+            color: white;
+        }
+
+        .btn--secondary:hover {
+            background: #bb0413;
+        }
+
         .btn--block {
             width: 100%;
             display: inline-block;
@@ -59,15 +68,26 @@
 <div class="picture-container">
     <img class="picture" src="{{asset('backend/img/logo-2.png')}}" alt="CepatTanggap Logo">
 </div>
-<button type="button" class="btn btn--primary btn--block">
-    Panggil Ambulans
-</button>
-<button type="button" class="btn btn--primary btn--block">
-    Panggil Nakes
-</button>
-<button type="button" class="btn btn--primary btn--block">
-    Pengaturan Profil
-</button>
+<a href="#">
+    <button type="button" class="btn btn--primary btn--block">
+        Panggil Ambulans
+    </button>
+</a>
+<a href="">
+    <button type="button" class="btn btn--primary btn--block">
+        Panggil Nakes
+    </button>
+</a>
+<a href="{{ route('profile.show') }}">
+    <button type="button" class="btn btn--primary btn--block">
+        Pengaturan Profil
+    </button>
+</a>
+<a href="logout">
+    <button type="button" class="btn btn--secondary btn--block">
+        Logout
+    </button>
+</a>
 <p class="footer__copy">&#169; Aone. All rigths reserved</p>
 </body>
 
