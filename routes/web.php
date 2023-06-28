@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\backend\AmbulanceController;
 use App\Http\Controllers\backend\NakesController;
 use App\Http\Controllers\backend\PasienController;
