@@ -13,7 +13,7 @@
 <hr class="sidebar-divider my-0">
 
 <!-- Nav Item - Dashboard -->
-<li class="{{'dashboard' == request()->path() ? 'nav-item active' : 'nav-item'}}">
+<li class="{{'redirects' == request()->path() ? 'nav-item active' : 'nav-item'}}">
     <a class="nav-link" href="{{route('dashboard')}}">
         <i class="fas fa-fw fa-tachometer-alt"></i>
         <span>Dashboard</span></a>
@@ -23,28 +23,28 @@
 <hr class="sidebar-divider">
 
 <!-- Nav Item - Pusat Kesehatan Collapse Menu -->
-<li class="{{'pusats/pusat/view' == request()->path() ? 'nav-item active' : 'nav-item'}}">
+<li class="{{'pusat/view' == request()->path() ? 'nav-item active' : 'nav-item'}}">
     <a class="nav-link collapsed" href="{{route('pusat.view')}}">
         <i class="fa fa-building"></i>
         <span>Pusat Kesehatan</span></a>
 </li>
 
 <!-- Nav Item - Pertolongan Nakes Collapse Menu -->
-<li class="{{'nakess/nakes/view' == request()->path() ? 'nav-item active' : 'nav-item'}}">
+<li class="{{'nakes/view' == request()->path() ? 'nav-item active' : 'nav-item'}}">
     <a class="nav-link collapsed" href="{{route('nakes.view')}}">
         <i class="fa fa-user-md"></i>
         <span>Pertolongan Nakes</span></a>
 </li>
 
 <!-- Nav Item - Ambulance Collapse Menu -->
-<li class="{{'ambulances/ambulance/view' == request()->path() ? 'nav-item active' : 'nav-item'}}">
+<li class="{{'ambulance/view' == request()->path() ? 'nav-item active' : 'nav-item'}}">
     <a class="nav-link collapsed" href="{{route('ambulance.view')}}">
         <i class="fa fa-ambulance"></i>
         <span>Pertolongan Ambulance</span></a>
 </li>
 
 <!-- Nav Item - Data Pasien Collapse Menu -->
-<li class="{{'pasiens/pasien/view' == request()->path() ? 'nav-item active' : 'nav-item'}}">
+<li class="{{'pasien/view' == request()->path() ? 'nav-item active' : 'nav-item'}}">
     <a class="nav-link collapsed" href="{{route('pasien.view')}}">
         <i class="fa fa-server"></i>
         <span>Data Pasien</span></a>

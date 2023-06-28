@@ -1194,7 +1194,7 @@
                     <p class="home__description">
                         Inovasi Dalam Pelayanan Kesehatan Untuk Seluruh Masyarakat
                     </p>
-                    <a href="{{ route('login') }}" class="button button--flex">
+                    <a href="{{ route('register') }}" class="button button--flex">
                         Daftarkan diri anda
                     </a>
                 </div>
