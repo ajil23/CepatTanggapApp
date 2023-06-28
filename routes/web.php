@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\backend\AmbulanceController;
+use App\Http\Controllers\backend\NakesController;
+use App\Http\Controllers\backend\PasienController;
+use App\Http\Controllers\Backend\PusatController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 /*
@@ -26,4 +30,15 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+});
+
+Route::group(['middleware' => ['auth']], function() {
+    Route::get('/logout', [AdminController::class, 'perform'])->name('logout.perform');
+ });
+
+Route::middleware(['auth'])->group(function() {
+    Route::get('/nakes/view',[NakesController::class, 'NakesView'])->name('nakes.view');
+    Route::get('/ambulance/view',[AmbulanceController::class, 'AmbulanceView'])->name('ambulance.view');
+    Route::get('/pusat/view',[PusatController::class, 'PusatView'])->name('pusat.view');
+    Route::get('/pasien/view',[PasienController::class, 'PasienView'])->name('pasien.view');
 });
